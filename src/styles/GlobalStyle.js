@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
     --white_100: #f7f7f7;
     --shadow_white: #DFDFDF;
     --shadow: #00000040;
+    --overlay: #ffffffc6;
+    --pro_overlay: #000207e8
   }
 
 
@@ -34,5 +36,5 @@ const GlobalStyle = createGlobalStyle`
     height: inherit;
     width: inherit;
   }
-`
+`;
 export default GlobalStyle;

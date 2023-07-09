@@ -5,11 +5,10 @@ import { motion } from "framer-motion";
 
 const Container = styled.div`
   background: var(--white_100);
-  padding: 50px;
+  padding: 50px 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: -200px;
 
   @media only screen and (max-width: 768px) {
     padding: 50px 20px;
@@ -21,7 +20,7 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
-  width: 90%;
+  width: 100%;
   margin: auto;
 
   @media only screen and (max-width: 969px) {
@@ -45,12 +44,14 @@ const Title = styled.h3`
 
 const Desc = styled.p`
   line-height: 1.7;
+  /* font-weight: 500; */
+  font-size: 0.9rem;
 `;
 
 const Box = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   flex: 1 0 30%;
   padding: 30px;
   color: var(--white);

@@ -5,16 +5,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGear,
   faGlobe,
-//   faBoltLightning,
-//   faCubes,
-//   faFireFlameSimple,
-//   faFlask,
-//   faGears,
-//   faLeaf,
-//   faPeopleGroup,
+  //   faBoltLightning,
+  //   faCubes,
+  //   faFireFlameSimple,
+  //   faFlask,
+  //   faGears,
+  //   faLeaf,
+  //   faPeopleGroup,
   faUser,
-//   faUmbrellaBeach,
+  //   faUmbrellaBeach,
 } from "@fortawesome/free-solid-svg-icons";
+
+import project1 from "./img/eco.jpeg";
+import project2 from "./img/manufacturing.jpg";
+import project3 from "./img/oil&gas.jpg";
+import project4 from "./img/industry.jpg";
+import project5 from "./img/factory.png";
 // import project1 from "./img/project-img-1.jpg";
 // import project2 from "./img/project-img-2.jpg";
 // import project3 from "./img/project-img-3.jpg";
@@ -70,6 +76,34 @@ export const GoalsData = [
     title: "Global sourcing",
     desc: "We are making a concerted effort to expand our global reach.",
     icon: <FontAwesomeIcon icon={faGlobe} />,
+  },
+];
+
+export const ProjectsData = [
+  {
+    id: 1,
+    title: "Eco",
+    img: project1,
+  },
+  {
+    id: 2,
+    title: "Manufacturing",
+    img: project2,
+  },
+  {
+    id: 3,
+    title: "Oil & Gas",
+    img: project3,
+  },
+  {
+    id: 4,
+    title: "Industy",
+    img: project4,
+  },
+  {
+    id: 5,
+    title: "Factory",
+    img: project5,
   },
 ];
 
