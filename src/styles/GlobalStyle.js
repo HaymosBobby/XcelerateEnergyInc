@@ -12,7 +12,8 @@ const GlobalStyle = createGlobalStyle`
     --shadow_white: #DFDFDF;
     --shadow: #00000040;
     --overlay: #ffffffc6;
-    --pro_overlay: #000207e8
+    --pro_overlay: #000207e8;
+    --need_overlay: #d81b2478;
   }
 
 

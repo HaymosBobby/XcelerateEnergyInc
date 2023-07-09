@@ -51,7 +51,15 @@ const Circle = styled.div`
   border-radius: 50%;
   overflow: hidden;
 
-
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--shadow);
+  }
 `;
 
 const Title = styled.h3`
@@ -59,6 +67,7 @@ const Title = styled.h3`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
 `;
 
 const Projects = () => {
