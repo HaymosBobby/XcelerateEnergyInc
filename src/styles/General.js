@@ -13,3 +13,10 @@ export const Classifier = styled.div`
   margin-bottom: ${(props) => (props.design === "white" ? "40" : "20")}px;
   color: ${(props) => props.design === "white" && "var(--white)"};
 `;
+
+export const Who = styled.h2`
+  font-weight: 900;
+  color: ${(props) =>
+    props.design === "pry" ? "var(--primary_color)" : "var(--secondary_color)"};
+  margin-bottom: 20px;
+`;

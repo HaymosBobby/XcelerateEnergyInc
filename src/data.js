@@ -5,12 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGear,
   faGlobe,
-  //   faBoltLightning,
-  //   faCubes,
-  //   faFireFlameSimple,
-  //   faFlask,
-  //   faGears,
-  //   faLeaf,
+    faBoltLightning,
+    faCubes,
+    faFireFlameSimple,
+    faFlask,
+    faGears,
+    faLeaf,
   //   faPeopleGroup,
   faUser,
   //   faUmbrellaBeach,
@@ -107,44 +107,44 @@ export const ProjectsData = [
   },
 ];
 
-// export const ServicesData = [
-//   {
-//     id: 1,
-//     icon: <FontAwesomeIcon icon={faGears} />,
-//     title: "Pipeline technology",
-//     desc: "Design, construction & management of thousands of miles of transmission pipelines, gathering systems & flowlines.",
-//   },
-//   {
-//     id: 2,
-//     icon: <FontAwesomeIcon icon={faLeaf} />,
-//     title: "Terminals & storage",
-//     desc: "Tank farms, rail loading terminals, and export terminals, connecting transmission pipelines & gathering systems.",
-//   },
-//   {
-//     id: 3,
-//     icon: <FontAwesomeIcon icon={faFireFlameSimple} />,
-//     title: "Offshore",
-//     desc: "Offshore and subsea engineering services from flowlines to export terminals, spanning across the world.",
-//   },
-//   {
-//     id: 4,
-//     icon: <FontAwesomeIcon icon={faBoltLightning} />,
-//     title: "Electric transmission",
-//     desc: "Underground / linear electricity transmission lines: buried cable, insulated lines and tunnels.",
-//   },
-//   {
-//     id: 5,
-//     icon: <FontAwesomeIcon icon={faFlask} />,
-//     title: "Renewables",
-//     desc: "Renewable natural gas recovery, geothermal, wind and transmission systems.",
-//   },
-//   {
-//     id: 6,
-//     icon: <FontAwesomeIcon icon={faCubes} />,
-//     title: "Facilities",
-//     desc: "Meter stations, pump stations, terminals (tank, rail, truck, marine).",
-//   },
-// ];
+export const ServicesData = [
+  {
+    id: 1,
+    icon: <FontAwesomeIcon icon={faGears} />,
+    title: "Pipeline technology",
+    desc: "Design, construction & management of thousands of miles of transmission pipelines, gathering systems & flowlines.",
+  },
+  {
+    id: 2,
+    icon: <FontAwesomeIcon icon={faLeaf} />,
+    title: "Terminals & storage",
+    desc: "Tank farms, rail loading terminals, and export terminals, connecting transmission pipelines & gathering systems.",
+  },
+  {
+    id: 3,
+    icon: <FontAwesomeIcon icon={faFireFlameSimple} />,
+    title: "Offshore",
+    desc: "Offshore and subsea engineering services from flowlines to export terminals, spanning across the world.",
+  },
+  {
+    id: 4,
+    icon: <FontAwesomeIcon icon={faBoltLightning} />,
+    title: "Electric transmission",
+    desc: "Underground / linear electricity transmission lines: buried cable, insulated lines and tunnels.",
+  },
+  {
+    id: 5,
+    icon: <FontAwesomeIcon icon={faFlask} />,
+    title: "Renewables",
+    desc: "Renewable natural gas recovery, geothermal, wind and transmission systems.",
+  },
+  {
+    id: 6,
+    icon: <FontAwesomeIcon icon={faCubes} />,
+    title: "Facilities",
+    desc: "Meter stations, pump stations, terminals (tank, rail, truck, marine).",
+  },
+];
 
 // export const ProjectsData = [
 //   {

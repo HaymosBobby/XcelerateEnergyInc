@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Classifier, Image } from "../styles/General";
+import { Classifier, Who } from "../styles/General";
 import { Link } from "react-router-dom";
 import abtBgd from "../img/abt-ico.png";
 import pattern from "../img/pattern.png";
@@ -31,11 +31,6 @@ const Container = styled.div`
   }
 `;
 
-const Who = styled.h2`
-  font-weight: 900;
-  color: var(--primary_color);
-  margin-bottom: 20px;
-`;
 
 const Left = styled.div`
   flex: 0 0 45%;
@@ -71,7 +66,7 @@ const About = () => {
     <Container>
       <Left>
         <Classifier>About Us</Classifier>
-        <Who>Who we are</Who>
+        <Who design= "pry">Who we are</Who>
         <Desc>
           Xcelerate Energy Inc helps oil and gas companies accelerate
           sustainable and inclusive growth by guiding their journey to a more
