@@ -4,7 +4,7 @@ import { ProjectsData } from "../data";
 import prjtBgd from "../img/project-image.jpg";
 
 const Container = styled.div`
-  background: var(--shadow_white) url(${prjtBgd}) no-repeat center center/cover;
+  background: var(--shadow_white) url(${prjtBgd}) no-repeat center center/cover fixed;
   padding: 50px 100px;
   position: relative;
   z-index: 1;

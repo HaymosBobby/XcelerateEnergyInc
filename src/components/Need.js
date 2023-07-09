@@ -3,7 +3,7 @@ import bgd from "../img/service-image.jpg";
 
 const Container = styled.div`
   background: linear-gradient(var(--shadow), var(--shadow)),
-    var(--shadow) url(${bgd}) no-repeat center/cover fixed;
+    var(--shadow) url(${bgd}) no-repeat center center/cover fixed;
   position: relative;
   z-index: 1;
 
