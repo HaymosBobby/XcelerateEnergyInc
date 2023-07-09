@@ -9,7 +9,7 @@ const Container = styled.div`
   background: var(--shadow_white) url(${pattern}) no-repeat center center/cover;
   position: relative;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 20px;
 
   &::after {
