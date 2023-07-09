@@ -38,7 +38,8 @@ const Left = styled.div`
 `;
 
 const Desc = styled.p`
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.3;
   margin-bottom: 20px;
 `;
 

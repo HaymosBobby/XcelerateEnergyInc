@@ -10,7 +10,7 @@ export const Classifier = styled.div`
   text-transform: capitalize;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: ${(props) => (props.design === "white" ? "40" : "20")}px;
+  margin-bottom: ${(props) => (props.design === "white" ? "40" : "10")}px;
   color: ${(props) => props.design === "white" && "var(--white)"};
 `;
 
@@ -18,5 +18,5 @@ export const Who = styled.h2`
   font-weight: 900;
   color: ${(props) =>
     props.design === "pry" ? "var(--primary_color)" : "var(--secondary_color)"};
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
