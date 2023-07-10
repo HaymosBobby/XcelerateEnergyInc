@@ -5,6 +5,7 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Services from "../components/Services";
 import Need from "../components/Need";
+import Contact from "../components/Contact";
 
 const Container = styled.div``;
 
@@ -17,6 +18,7 @@ const Home = () => {
       <Projects />
       <Services />
       <Need />
+      <Contact />
     </Container>
   )
 }

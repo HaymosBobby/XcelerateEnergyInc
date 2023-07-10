@@ -2,6 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import GlobalStyle from "./styles/GlobalStyle";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
+
+
 
 function App() {
 
@@ -15,6 +18,7 @@ function App() {
           <Route index element={<Home /> } />
         </Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
