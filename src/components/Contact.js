@@ -35,6 +35,7 @@ const Title = styled.h3`
 const Desc = styled.p`
   margin-bottom: 10px;
   font-size: 0.9rem;
+  z-index: 2;
 `;
 
 const IconContainer = styled.div`
@@ -68,6 +69,10 @@ const Box = styled.div`
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   animation: ${(props) => (props.anim ? "animate 0.7s ease-in-out" : "")};
 
