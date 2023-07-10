@@ -68,6 +68,7 @@ const Box = styled.div`
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  text-align: center;
   animation: ${(props) => (props.anim ? "animate 0.7s ease-in-out" : "")};
 
   @keyframes animate {
