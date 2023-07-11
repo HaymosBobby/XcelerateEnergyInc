@@ -5,7 +5,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
-// import { useInView } from "react-intersection-observer";
 
 const Container = styled.div`
   padding: 70px;
@@ -104,23 +103,17 @@ const Box = styled.div`
 `;
 
 const Contact = () => {
-  // const [element, view] = useInView();
-  // const [element1, view1] = useInView();
-  // const [element2, view2] = useInView();
-
   return (
     <Container>
       <Wrapper>
-        {/* <Box ref={element} anim={view}> */}
         <Box>
           <Title>Call us now</Title>
           <Desc>Office Telephone: 4096552465</Desc>
           <Desc>Mobile: 4096552465</Desc>
           <IconContainer>
-            <FontAwesomeIcon icon={faPhone} />{" "}
+            <FontAwesomeIcon icon={faPhone} />
           </IconContainer>
         </Box>
-        {/* <Box ref={element1} anim={view1}> */}
         <Box>
           <Title>Come visit us</Title>
           <Desc>99 S.t Jomblo Park Pekanbaru 28292. Indonesia</Desc>
@@ -128,7 +121,6 @@ const Contact = () => {
             <FontAwesomeIcon icon={faLocationDot} />
           </IconContainer>
         </Box>
-        {/* <Box ref={element2} anim={view2}> */}
         <Box>
           <Title>Send us a message</Title>
           <Desc>General: info@xcelerate.com</Desc>

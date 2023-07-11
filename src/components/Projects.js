@@ -34,7 +34,6 @@ const Wrapper = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: 550px) {
-    /* flex-direction: column; */
     justify-content: center;
   }
 `;

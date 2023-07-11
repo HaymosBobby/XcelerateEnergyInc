@@ -10,7 +10,6 @@ const Container = styled.div`
   background: var(--shadow_white) url(${pattern}) no-repeat center center/cover;
   position: relative;
   display: flex;
-  /* align-items: center; */
   gap: 20px;
 
   &::after {
@@ -86,7 +85,7 @@ const About = () => {
           services without shutting down the system or losing products
         </Desc>
         <Read>
-          <Link>Read More...</Link>
+          <Link to={`about`}>Read More...</Link>
         </Read>
       </Left>
       <Right>

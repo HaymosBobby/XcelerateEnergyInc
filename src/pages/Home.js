@@ -27,7 +27,7 @@ const Home = () => {
       <Need />
       <Contact />
     </Container>
-  )
-}
+  );
+};
 
 export default Home;

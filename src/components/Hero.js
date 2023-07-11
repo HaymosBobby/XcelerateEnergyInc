@@ -26,7 +26,6 @@ const Wrapper = styled.div`
   display: flex;
   transition: all 1s ease-in-out;
   transform: translateX(${(props) => props.scrollnum * -100}vw);
-  /* transform: translateX(-100vw); */
 `;
 
 const Arrow = styled.div`
@@ -210,16 +209,16 @@ const Hero = () => {
           return (
             <Slide bg={slide.bg} key={slide.id}>
               <ImageContainer>
-                <Image src={slide.img} alt={slide.title}/>
+                <Image src={slide.img} alt={slide.title} />
               </ImageContainer>
               <InfoContainer>
                 <Title>{slide.title}</Title>
                 <Desc>{slide.desc}</Desc>
                 <ButtonContainer>
-                  <Link>
+                  <Link to={`about`}>
                     <Button col="pry">Read More</Button>
                   </Link>
-                  <Link>
+                  <Link to={`contact`}>
                     <Button col="sec">Contact Us</Button>
                   </Link>
                 </ButtonContainer>
@@ -231,92 +230,8 @@ const Hero = () => {
       <Arrow direction="right" onClick={() => handleClick("right")}>
         <FontAwesomeIcon icon={faAngleRight} />
       </Arrow>
-
-      {/* <Goals /> */}
     </Container>
   );
 };
 
 export default Hero;
-
-/********** 
-var responsiveSlider = function() {
-
-  var slider = document.getElementById("slider");
-  var sliderWidth = slider.offsetWidth;
-  var slideList = document.getElementById("slideWrap");
-  var count = 1;
-  var items = slideList.querySelectorAll("li").length;
-  var prev = document.getElementById("prev");
-  var next = document.getElementById("next");
-
-  window.addEventListener('resize', function() {
-    sliderWidth = slider.offsetWidth;
-  });
-
-  var prevSlide = function() {
-    if(count > 1) {
-      count = count - 2;
-      slideList.style.left = "-" + count * sliderWidth + "px";
-      count++;
-    }
-    else if(count = 1) {
-      count = items - 1;
-      slideList.style.left = "-" + count * sliderWidth + "px";
-      count++;
-    }
-  };
-
-  var nextSlide = function() {
-    if(count < items) {
-      slideList.style.left = "-" + count * sliderWidth + "px";
-      count++;
-    }
-    else if(count = items) {
-      slideList.style.left = "0px";
-      count = 1;
-    }
-  };
-
-  next.addEventListener("click", function() {
-    nextSlide();
-  });
-
-  prev.addEventListener("click", function() {
-    prevSlide();
-  });
-
-  setInterval(function() {
-    nextSlide()
-  }, 5000);
-
-  };
-
-  window.onload = function() {
-  responsiveSlider();  
-}
- */
-
-// const prevSlide = () => {
-//   setSlideIndex(slideIndex > 1 ? slideIndex - 1 : SliderItems.length);
-// };
-// const nextSlide = () => {
-//   setSlideIndex(slideIndex < SliderItems.length ? slideIndex + 1 : 0);
-// };
-// const handleClick = (direction) => {
-//   if (direction === "left") {
-//     prevSlide();
-//   } else if (direction === "right") {
-//     nextSlide();
-//   }
-// };
-
-// const autoSlide = () => {
-//   setInterval(() => {
-//     nextSlide();
-//   }, 5000);
-// };
-
-// autoSlide();
-
-// console.log(slideIndex)

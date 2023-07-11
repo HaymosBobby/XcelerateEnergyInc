@@ -18,7 +18,6 @@ const ContactContainer = styled.div`
   margin: auto;
   display: flex;
   gap: 30px;
-  // background: linear-gradient(var(--bgd_black_200), var(--bgd_black_200)), var(--bgd_black_200) url(${bkgrnd});
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
@@ -29,7 +28,6 @@ const ContactContainer = styled.div`
 `;
 
 const FormContainer = styled.div`
-  /* color: var(--grey); */
   flex: 1 0 60%;
 
   @media only screen and (max-width: 768px) {

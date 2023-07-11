@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { GoalsData } from "../data";
-import { motion } from "framer-motion";
-// import { fadeIn } from "../motions/animation";
 
 const Container = styled.div`
   background: var(--white_100);
@@ -44,11 +42,10 @@ const Title = styled.h3`
 
 const Desc = styled.p`
   line-height: 1.7;
-  /* font-weight: 500; */
   font-size: 0.9rem;
 `;
 
-const Box = styled(motion.div)`
+const Box = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -86,12 +83,7 @@ const Goals = () => {
       <Wrapper>
         {GoalsData.map((goal) => {
           return (
-            <Box
-              key={goal.id}
-              // variants={fadeIn}
-              // initial="hidden"
-              // animate="show"
-            >
+            <Box key={goal.id}>
               <InfoContainer>
                 <IconContainer>{goal.icon}</IconContainer>
                 <Title>{goal.title}</Title>

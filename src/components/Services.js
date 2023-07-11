@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Classifier, Line, LineSq, Square, Who } from "../styles/General";
+import { Classifier, Image, Line, LineSq, Square, Who } from "../styles/General";
 import pattern from "../img/pattern.png";
 import { ServicesData } from "../data";
 
@@ -7,8 +7,6 @@ const Container = styled.div`
   padding: 50px 100px;
   background: var(--shadow_white) url(${pattern}) no-repeat center center/cover;
   position: relative;
-  /* display: flex;
-  align-items: center; */
   gap: 20px;
   z-index: 1;
 
@@ -26,10 +24,6 @@ const Container = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 30px;
   }
-
-  /* @media only screen and (max-width: 969px) {
-    flex-direction: column;
-  } */
 `;
 
 const Wrapper = styled.div`
@@ -41,6 +35,7 @@ const Wrapper = styled.div`
 const IconContainer = styled.div`
   font-size: 3rem;
   margin-bottom: 20px;
+  height: 50px;
 `;
 
 const Title = styled.h2`
@@ -50,24 +45,6 @@ const Title = styled.h2`
 `;
 
 const Desc = styled.p`
-  /* opacity: 0; */
-  /* position: absolute; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* padding: 20px;
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.5);
-  color: var(--white);
-  background: var(--tertiary_color_200);
-  transition: all 0.3s ease-in-out;
-  z-index: 3;
-  line-height: 1.5;
-  text-align: center; */
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -97,22 +74,6 @@ const Box = styled.div`
   overflow: hidden;
   justify-content: center;
   z-index: 1;
-
-  /* &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: #00000040;
-    transition: all 0.75s ease-in-out;
-    transform: scale(0) rotate(360deg);
-    opacity: 0;
-    border-radius: 50%;
-    margin: auto;
-  } */
 
   &:nth-child(odd) {
     color: var(--primary_color);
@@ -165,7 +126,7 @@ const Services = () => {
         {ServicesData.map((service) => {
           return (
             <Box key={service.id}>
-              <IconContainer>{service.icon}</IconContainer>
+              <IconContainer><Image src={service.icon} /></IconContainer>
               <Title>{service.title}</Title>
               <Desc>{service.desc}</Desc>
             </Box>

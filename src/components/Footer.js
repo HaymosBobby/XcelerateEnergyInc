@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../img/xclere-white.png";
+
 const Container = styled.div`
   background: var(--primary_color);
   color: var(--white);
@@ -74,6 +75,8 @@ const Center = styled.div`
   }
 `;
 
+const CenterDiv = styled.div``;
+
 const Title = styled.h2`
   font-weight: 600;
   text-transform: uppercase;
@@ -92,6 +95,7 @@ const Service = styled.li`
   font-weight: 500;
   font-size: 0.9rem;
   color: var(--white_100);
+  cursor: pointer;
 `;
 
 const Right = styled.div`
@@ -169,7 +173,6 @@ const Footer = () => {
         <Top>
           <Left>
             <Logo>
-              {/* <Ex>X</Ex>celerate */}
               <Link to="/">
                 <Icon src={logo} alt="" />
               </Link>
@@ -180,41 +183,39 @@ const Footer = () => {
               journey to a more efficient and sustainable future.
             </Desc>
             <SocialIcon>
-              <Link to="https://www.facebook.com">
+              <Link to={`https://www.facebook.com`}>
                 <FontAwesomeIcon icon={faFacebookF} />
               </Link>
-              <Link to="https://www.twitter.com">
+              <Link to={`https://www.twitter.com`}>
                 <FontAwesomeIcon icon={faTwitter} />
               </Link>
-              <Link to="https://www.instagram.com">
+              <Link to={`https://www.instagram.com`}>
                 <FontAwesomeIcon icon={faInstagram} />
               </Link>
-              <Link to="https://www.google.com">
+              <Link to={`https://www.google.com`}>
                 <FontAwesomeIcon icon={faGoogle} />
               </Link>
             </SocialIcon>
           </Left>
           <Center>
-            <div>
+            <CenterDiv>
               <Title>Our Services</Title>
               <Services>
-                <Link to="/">
+                <Link to={`/`}>
                   <Service>- Home</Service>
                 </Link>
-                <Link to="/about">
+                <Link to={`/about`}>
                   <Service>- About us</Service>
                 </Link>
-                <Link to="/our-team">
+                <Link to={`/our-team`}>
                   <Service>- Our team</Service>
                 </Link>
-                <Link to="/services">
-                  <Service>- Services</Service>
-                </Link>
-                <Link>
+                <Service>- Services</Service>
+                <Link to={`contact`}>
                   <Service>- Contact</Service>
                 </Link>
               </Services>
-            </div>
+            </CenterDiv>
           </Center>
           <Right>
             <Title>Join Our Community</Title>

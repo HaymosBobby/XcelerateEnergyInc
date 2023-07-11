@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Image } from "../styles/General";
 import logo from "../img/xclere-white.png";
+import logoWhite from "../img/xceleratelogo.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSortDown } from "@fortawesome/free-solid-svg-icons";
@@ -8,17 +9,18 @@ import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
 
 const Container = styled.div`
-  background: var(--primary_color);
+  background: ${(props) =>
+    props.design ? "var(--white)" : "var(--primary_color)"};
+  width: 100%;
   padding: 5px 20px;
-  position: relative;
-
-  /* @media only screen and (max-width: 980px) {
-    display: none;
-  } */
+  z-index: 99999;
+  transition: all 0.3s ease-in-out;
+  position: ${(props) => (props.design ? "fixed" : "")};
+  top: 0;
+  box-shadow: ${(props) => props.design && "0 0 10px var(--shadow)"};
 `;
 
 const Wrapper = styled.div`
-  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,10 +31,11 @@ const Left = styled.div``;
 
 const Logo = styled.div`
   width: 150px;
-  /* height: 50px; */
 `;
 
 const Center = styled.div`
+  color: ${(props) => (props.design ? "var(--primary_color)" : "var(--white)")};
+
   @media only screen and (max-width: 950px) {
     color: var(--primary_color);
     background: var(--white);
@@ -130,6 +133,7 @@ const Right = styled.div`
 
 const Get = styled.div`
   background: var(--secondary_color);
+  color: var(--white);
   padding: 15px 10px;
   text-transform: uppercase;
   font-weight: 700;
@@ -149,13 +153,13 @@ const MobileNavToggler = styled.div`
   background: var(--white);
   padding: 10px;
   border-radius: 5px;
+  box-shadow: ${(props) => props.design && "0 0 5px var(--shadow_white)"};
   cursor: pointer;
   display: none;
 
   @media only screen and (max-width: 950px) {
     display: flex;
     flex-direction: column;
-    /* align-items: ${(props) => (props.open ? "center" : "flex-start")}; */
     justify-content: center;
   }
 `;
@@ -186,34 +190,37 @@ const ToggleLine = styled.div`
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
   const handleMobileNav = () => {
     setOpen(!open);
   };
 
   window.onscroll = () => {
-    setOpen(false)
-  }
+    setOpen(false);
+
+    window.scrollY > 100 ? setScroll(true) : setScroll(false);
+  };
 
   return (
-    <Container>
+    <Container design={scroll}>
       <Wrapper>
         <Left>
           <Logo>
-            <Image src={logo} alt="Xcelerate" />
+            <Image src={scroll ? logoWhite : logo} alt="Xcelerate" />
           </Logo>
         </Left>
-        <Center open={open}>
+        <Center open={open} design={scroll}>
           <Menu>
-            <Link to="/" onClick={handleMobileNav}>
+            <Link to={`/`} onClick={handleMobileNav}>
               <MenuItem>Home</MenuItem>
             </Link>
 
-            <Link to="/about" onClick={handleMobileNav}>
+            <Link to={`/about`} onClick={handleMobileNav}>
               <MenuItem>About us</MenuItem>
             </Link>
 
-            <Link to="/our-tem" onClick={handleMobileNav}>
+            <Link to={`/our-tem`} onClick={handleMobileNav}>
               <MenuItem>Our Team</MenuItem>
             </Link>
 
@@ -234,20 +241,20 @@ const Nav = () => {
               </Services>
             </MenuItem>
 
-            <Link to="/contact" onClick={handleMobileNav}>
+            <Link to={`/contact`} onClick={handleMobileNav}>
               <MenuItem>Contact</MenuItem>
             </Link>
           </Menu>
         </Center>
         <Right>
-          <Link>
+          <Link to={"/contact"}>
             <Get>
               <FontAwesomeIcon icon={faCheckCircle} /> Get A Quote
             </Get>
           </Link>
         </Right>
 
-        <MobileNavToggler onClick={handleMobileNav} open={open}>
+        <MobileNavToggler onClick={handleMobileNav} open={open} design={scroll}>
           <ToggleLine open={open}></ToggleLine>
           <ToggleLine open={open}></ToggleLine>
           <ToggleLine open={open}></ToggleLine>
