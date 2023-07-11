@@ -108,15 +108,14 @@ const Contact = () => {
       <Wrapper>
         <Box>
           <Title>Call us now</Title>
-          <Desc>Office Telephone: 4096552465</Desc>
-          <Desc>Mobile: 4096552465</Desc>
+          <Desc>Office Telephone: +1 409 655 2465</Desc>
           <IconContainer>
             <FontAwesomeIcon icon={faPhone} />
           </IconContainer>
         </Box>
         <Box>
           <Title>Come visit us</Title>
-          <Desc>99 S.t Jomblo Park Pekanbaru 28292. Indonesia</Desc>
+          <Desc>5900 Balcones Drive Suite 100, Austin, TX</Desc>
           <IconContainer>
             <FontAwesomeIcon icon={faLocationDot} />
           </IconContainer>
