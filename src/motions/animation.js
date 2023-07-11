@@ -7,8 +7,9 @@ export const pageAnimation = {
     opacity: 1,
     y: 0,
     transition: {
+      ease: "easeInOut",
       duration: 1,
-      when: "afterChildren",
+      when: "beforeChildren",
       staggerChildren: 0.25,
     },
   },
@@ -26,7 +27,7 @@ export const fadeIn = {
     scale: 0.8,
     opacity: 0,
     transition: {
-      ease: "easeOut",
+      ease: "easeInOut",
     },
   },
   show: {
@@ -34,7 +35,7 @@ export const fadeIn = {
     opacity: 1,
     transition: {
       duration: 0.75,
-      ease: "easeOut",
+      ease: "easeInOut",
     },
   },
 };
@@ -49,7 +50,7 @@ export const slideUp = {
     opacity: 1,
     transition: {
       duration: 0.5,
-      ease: "easeOut",
+      ease: "easeInOut",
     },
   },
 };
