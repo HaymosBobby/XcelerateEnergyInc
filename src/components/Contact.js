@@ -52,10 +52,6 @@ const IconContainer = styled.div`
   opacity: 0;
   transition: all 0.3s ease-in-out;
   font-size: 4rem;
-
-  &:nth-child(odd) {
-    color: var(--secondary_color);
-  }
 `;
 
 const Box = styled.div`
@@ -82,6 +78,10 @@ const Box = styled.div`
     to {
       transform: translateX(0);
     }
+  }
+
+  &:nth-child(even) ${IconContainer} {
+    color: var(--secondary_color);
   }
 
   &:hover {

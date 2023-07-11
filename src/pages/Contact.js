@@ -52,8 +52,11 @@ const InputContainer = styled.div``;
 const Input = styled.input`
   width: 100%;
   padding: 10px;
+  border-radius: 5px;
   border: 1px solid var(--primary_color);
-  colot &:focus {
+  color: var(--primary_color);
+  
+  &:focus {
     outline: none;
   }
 
@@ -67,6 +70,8 @@ const Textarea = styled.textarea`
   border: 1px solid var(--primary_color);
   width: 100%;
   padding: 10px;
+  border-radius: 5px;
+  resize: none;
 
   &:focus {
     outline: none;
