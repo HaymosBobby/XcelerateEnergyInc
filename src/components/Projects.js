@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import { Classifier, Image } from "../styles/General";
+import { Square, Classifier, Image, Line, LineSq } from "../styles/General";
 import { ProjectsData } from "../data";
 import prjtBgd from "../img/project-image.jpg";
 
 const Container = styled.div`
-  background: var(--shadow_white) url(${prjtBgd}) no-repeat center center/cover fixed;
+  background: var(--shadow_white) url(${prjtBgd}) no-repeat center center/cover
+    fixed;
   padding: 50px 100px;
   position: relative;
   z-index: 1;
@@ -73,7 +74,13 @@ const Title = styled.h3`
 const Projects = () => {
   return (
     <Container>
-      <Classifier design="white">Projects</Classifier>
+      <Classifier design="white">
+        Projects
+        <LineSq>
+          <Square design="white"></Square>
+          <Line design="white"></Line>
+        </LineSq>
+      </Classifier>
       <Wrapper>
         {ProjectsData.map((project) => {
           return (

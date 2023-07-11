@@ -3,6 +3,7 @@ import { Classifier, Who } from "../styles/General";
 import { Link } from "react-router-dom";
 import abtBgd from "../img/abt-ico.png";
 import pattern from "../img/pattern.png";
+import { LineSq, Line, Square } from "../styles/General";
 
 const Container = styled.div`
   padding: 50px 100px;
@@ -30,7 +31,6 @@ const Container = styled.div`
     flex-direction: column;
   }
 `;
-
 
 const Left = styled.div`
   flex: 0 0 45%;
@@ -66,8 +66,14 @@ const About = () => {
   return (
     <Container>
       <Left>
-        <Classifier>About Us</Classifier>
-        <Who design= "pry">Who we are</Who>
+        <Classifier>
+          About Us
+          <LineSq>
+            <Square></Square>
+            <Line></Line>
+          </LineSq>
+        </Classifier>
+        <Who design="pry">Who we are</Who>
         <Desc>
           Xcelerate Energy Inc helps oil and gas companies accelerate
           sustainable and inclusive growth by guiding their journey to a more

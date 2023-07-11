@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Classifier, Who } from "../styles/General";
+import { Classifier, Line, LineSq, Square, Who } from "../styles/General";
 import pattern from "../img/pattern.png";
 import { ServicesData } from "../data";
 
@@ -153,7 +153,13 @@ const Box = styled.div`
 const Services = () => {
   return (
     <Container>
-      <Classifier>Services</Classifier>
+      <Classifier>
+        Services
+        <LineSq>
+          <Square></Square>
+          <Line></Line>
+        </LineSq>
+      </Classifier>
       <Who>What we do</Who>
       <Wrapper>
         {ServicesData.map((service) => {
