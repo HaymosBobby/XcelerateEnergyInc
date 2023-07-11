@@ -16,8 +16,8 @@ const About = () => {
       exit="exit"
     >
       <Header title={`About Us`} />
-      <AboutComp />
       <Goals />
+      <AboutComp />
     </Container>
   );
 };
