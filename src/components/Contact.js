@@ -114,8 +114,8 @@ const Contact = () => {
         {/* <Box ref={element} anim={view}> */}
         <Box>
           <Title>Call us now</Title>
-          <Desc>Office Telephone: +12 345 6789 123</Desc>
-          <Desc>Mobile: +12 987 6543 213</Desc>
+          <Desc>Office Telephone: 4096552465</Desc>
+          <Desc>Mobile: 4096552465</Desc>
           <IconContainer>
             <FontAwesomeIcon icon={faPhone} />{" "}
           </IconContainer>

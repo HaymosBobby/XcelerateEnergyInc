@@ -20,3 +20,43 @@ export const Who = styled.h2`
     props.design === "pry" ? "var(--primary_color)" : "var(--secondary_color)"};
   margin-bottom: 10px;
 `;
+
+export const Wrapper = styled.div`
+  height: 300px;
+  position: relative;
+
+  `;
+
+export const ImageContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: var(--shadow);
+  }
+`;
+
+export const InfoContainer = styled.div`
+  position: absolute;
+  height: 100%;
+  top: 100px;
+  left: 100px;
+  margin: auto;
+  color: var(--white);
+
+  a {
+    color: inherit;
+  }
+`;
+
+export const PageTitle = styled.h1``;
+
+export const GoHome = styled.div``;
