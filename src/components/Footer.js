@@ -160,8 +160,6 @@ const Message = styled.p`
   text-align: center;
 `;
 
-
-
 const Footer = () => {
   const date = new Date().getFullYear();
 
@@ -236,10 +234,8 @@ const Footer = () => {
         <Divider></Divider>
         <Bottom>
           <Message>
-            &copy;{" "}
-            {`${date} Xcelerate, The Awesome Oil Industry. All right reserved.`}
+            &copy; {`${date} XcelerateEnergyInc | All Rights Reserved.`}
           </Message>
-
         </Bottom>
       </Wrapper>
     </Container>
