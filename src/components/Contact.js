@@ -122,8 +122,8 @@ const Contact = () => {
         </Box>
         <Box>
           <Title>Send us a message</Title>
-          <Desc>General: info@xcelerate.com</Desc>
-          <Desc>Sales: sales@xcelerate.com</Desc>
+          <Desc>General: info@xceleratenergy.com</Desc>
+          <Desc>Sales: sales@xceleratenergy.com</Desc>
           <IconContainer>
             <FontAwesomeIcon icon={faEnvelope} />
           </IconContainer>
