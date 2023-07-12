@@ -36,6 +36,7 @@ const IconContainer = styled.div`
   font-size: 3rem;
   margin-bottom: 20px;
   height: 50px;
+  width: max-content;
 `;
 
 const Title = styled.h2`
