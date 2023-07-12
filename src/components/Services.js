@@ -33,8 +33,8 @@ const Wrapper = styled.div`
 `;
 
 const Image = styled.img`
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   object-fit: contain;
 `;
 const IconContainer = styled.div`
