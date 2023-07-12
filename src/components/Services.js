@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Classifier, Image, Line, LineSq, Square, Who } from "../styles/General";
+import { Classifier, Line, LineSq, Square, Who } from "../styles/General";
 import pattern from "../img/pattern.png";
 import { ServicesData } from "../data";
 
@@ -32,11 +32,16 @@ const Wrapper = styled.div`
   gap: 20px;
 `;
 
+const Image = styled.img`
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+`;
 const IconContainer = styled.div`
   font-size: 3rem;
   margin-bottom: 20px;
-  height: 50px;
-  width: max-content;
+  /* height: 50px;
+  width: 100px; */
 `;
 
 const Title = styled.h2`
@@ -57,6 +62,7 @@ const Desc = styled.p`
   align-items: center;
   padding: 20px;
   justify-content: center;
+  text-align: center;
   transition: all 0.75s ease-in-out;
   opacity: 0;
 `;
@@ -127,7 +133,9 @@ const Services = () => {
         {ServicesData.map((service) => {
           return (
             <Box key={service.id}>
-              <IconContainer><Image src={service.icon} /></IconContainer>
+              <IconContainer>
+                <Image src={service.icon} alt={service.title} />
+              </IconContainer>
               <Title>{service.title}</Title>
               <Desc>{service.desc}</Desc>
             </Box>
