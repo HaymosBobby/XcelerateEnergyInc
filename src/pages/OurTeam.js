@@ -84,6 +84,7 @@ const Box = styled.div`
   color: var(--white);
   flex: 0 0 200px;
   font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.2px;
 
   &:nth-child(odd) ${Name} {
     background: var(--secondary_color);
