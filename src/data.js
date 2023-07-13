@@ -1,6 +1,7 @@
 import slider1 from "./img/hero-1.jpg";
 import slider2 from "./img/hero-2.jpg";
 import slider3 from "./img/hero-3.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGear, faGlobe, faUser } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,6 +17,12 @@ import project2 from "./img/manufacturing.jpg";
 import project3 from "./img/oil&gas.jpg";
 import project4 from "./img/industry.jpg";
 import project5 from "./img/factory.png";
+
+import harley from "./img/Harley Blumenthal.jpeg";
+import alice from "./img/Alice White.jpeg";
+import adam from "./img/Adam Nguyen.jpg";
+import thomas from "./img/Thomas Mateo.jpeg";
+import gianna from "./img/GIANNA CHLOE.jpeg";
 
 export const SliderItems = [
   {
@@ -126,5 +133,38 @@ export const ServicesData = [
     icon: facility,
     title: "Facilities",
     desc: "Meter stations, pump stations, terminals (tank, rail, truck, marine).",
+  },
+];
+
+export const TeamData = [
+  {
+    id: 1,
+    name: "Harley Blumenthal",
+    position: "Chief Executive Officer",
+    img: harley,
+  },
+  {
+    id: 2,
+    name: "Alice White",
+    position: "GM, Human Resources",
+    img: alice,
+  },
+  {
+    id: 3,
+    name: "Adam Nguyen",
+    position: "Petrophysical Engineer",
+    img: adam,
+  },
+  {
+    id: 4,
+    name: "Thomas Mateo",
+    position: "GM, Corporate Services",
+    img: thomas,
+  },
+  {
+    id: 5,
+    name: "Gianna Chloe",
+    position: "GM, Finance",
+    img: gianna,
   },
 ];

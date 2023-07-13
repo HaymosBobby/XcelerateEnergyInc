@@ -206,9 +206,11 @@ const Nav = () => {
     <Container design={scroll}>
       <Wrapper>
         <Left>
+          <Link to={`/`}>
           <Logo>
             <Image src={scroll ? logoWhite : logo} alt="Xcelerate" />
           </Logo>
+          </Link>
         </Left>
         <Center open={open} design={scroll}>
           <Menu>
@@ -220,7 +222,7 @@ const Nav = () => {
               <MenuItem>About us</MenuItem>
             </Link>
 
-            <Link to={`/our-tem`} onClick={handleMobileNav}>
+            <Link to={`/our-team`} onClick={handleMobileNav}>
               <MenuItem>Our Team</MenuItem>
             </Link>
 

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import ContactComp from "../components/Contact";
-import { Link } from "react-router-dom";
 import bkgrnd from "../img/industry.jpg";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../motions/animation";
 import { Image } from "../styles/General";
 import Header from "../components/Header";
+
 const Container = styled(motion.div)``;
 
 const ContactContainer = styled.div`

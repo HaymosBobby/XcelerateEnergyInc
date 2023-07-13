@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import bgd from "../img/service-image.jpg";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   background: linear-gradient(var(--shadow), var(--shadow)),
@@ -75,7 +76,9 @@ const Need = () => {
           integrity. Our leadership is a profound source of pride and we will
           lead in the future of energy
         </Desc>
+        <Link to={`/contact`}>
         <Button>Contact Us</Button>
+        </Link>
       </Wrapper>
     </Container>
   );

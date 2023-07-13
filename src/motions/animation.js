@@ -22,35 +22,35 @@ export const pageAnimation = {
   },
 };
 
-export const fadeIn = {
-  hidden: {
-    scale: 0.8,
-    opacity: 0,
-    transition: {
-      ease: "easeInOut",
-    },
-  },
-  show: {
-    scale: 1,
-    opacity: 1,
-    transition: {
-      duration: 0.75,
-      ease: "easeInOut",
-    },
-  },
-};
+// export const fadeIn = {
+//   hidden: {
+//     scale: 0.8,
+//     opacity: 0,
+//     transition: {
+//       ease: "easeInOut",
+//     },
+//   },
+//   show: {
+//     scale: 1,
+//     opacity: 1,
+//     transition: {
+//       duration: 0.75,
+//       ease: "easeInOut",
+//     },
+//   },
+// };
 
-export const slideUp = {
-  hidden: {
-    y: 100,
-    opacity: 0,
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeInOut",
-    },
-  },
-};
+// export const slideUp = {
+//   hidden: {
+//     y: 100,
+//     opacity: 0,
+//   },
+//   show: {
+//     y: 0,
+//     opacity: 1,
+//     transition: {
+//       duration: 0.5,
+//       ease: "easeInOut",
+//     },
+//   },
+// };

@@ -54,6 +54,10 @@ export const InfoContainer = styled.div`
   margin: auto;
   color: var(--white);
 
+  @media only screen and (max-width: 768px) {
+    left: 50px;
+  }
+
   a {
     color: inherit;
   }

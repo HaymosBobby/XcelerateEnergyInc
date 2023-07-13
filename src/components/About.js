@@ -85,7 +85,7 @@ const About = () => {
           services without shutting down the system or losing products
         </Desc>
         <Read>
-          <Link to={`about`}>Read More...</Link>
+          <Link to={`/about`}>Read More...</Link>
         </Read>
       </Left>
       <Right>
