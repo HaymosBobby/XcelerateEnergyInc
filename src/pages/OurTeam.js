@@ -126,7 +126,7 @@ const OurTeam = () => {
       <Wrapper>
         <Left>
           <Classifier>
-            Our Team
+            Our Team 
             <LineSq>
               <Square></Square>
               <Line></Line>

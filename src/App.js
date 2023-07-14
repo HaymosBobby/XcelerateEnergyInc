@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import OurTeam from "./pages/OurTeam";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
           </Route>
         </Routes>
       </AnimatePresence>
+      <ScrollTop />
       <Footer />
     </div>
   );
