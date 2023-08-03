@@ -168,6 +168,7 @@ const Hero = () => {
 
   function resetTimeout() {
     if (timeOutRef.current) {
+      console.log(timeOutRef.current)
       clearTimeout(timeOutRef.current);
     }
   }
@@ -181,6 +182,7 @@ const Hero = () => {
     return setSlideIndex(
       slideIndex < SliderItems.length - 1 ? slideIndex + 1 : 0
     );
+
   }, [slideIndex]);
 
   const handleClick = (direction) => {
